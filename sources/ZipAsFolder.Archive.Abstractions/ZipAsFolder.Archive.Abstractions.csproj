@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>ZipAsFolder.Archive</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZipAsFolder.Shared\ZipAsFolder.Shared.csproj" />
+  </ItemGroup>
+</Project>

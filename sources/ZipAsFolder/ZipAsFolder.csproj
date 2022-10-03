@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <ItemGroup>
+    <PackageReference Include="PowerShellStandard.Library" Version="5.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZipAsFolder.Archive.Zip\ZipAsFolder.Archive.Zip.csproj" />
+    <ProjectReference Include="..\ZipAsFolder.IO.Archive\ZipAsFolder.IO.Archive.csproj" />
+    <ProjectReference Include="..\ZipAsFolder.IO.FileSystem\ZipAsFolder.IO.FileSystem.csproj" />
+    <ProjectReference Include="..\ZipAsFolder.Suite\ZipAsFolder.Suite.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ZipAsFolder.Format.ps1xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ZipAsFolder.psd1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ZipAsFolder.psm1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\LICENSE" Link="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

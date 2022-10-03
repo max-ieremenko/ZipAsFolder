@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>FileInfoSystemFileInfo</Name>
+      <ViewSelectedBy>
+        <TypeName>ZipAsFolder.IO.FileSystem.FileSystemDirectoryInfo</TypeName>
+        <TypeName>ZipAsFolder.IO.FileSystem.FileSystemFileInfo</TypeName>
+
+        <TypeName>ZipAsFolder.IO.Archive.ArchiveFile</TypeName>
+        <TypeName>ZipAsFolder.IO.Archive.ArchiveFileInfo</TypeName>
+        <TypeName>ZipAsFolder.IO.Archive.ArchiveDirectoryInfo</TypeName>
+      </ViewSelectedBy>
+      <GroupBy>
+        <PropertyName>DirectoryName</PropertyName>
+      </GroupBy>
+      <!--<ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>FullName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <PropertyName>Attributes</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>-->
+      <TableControl>
+        <AutoSize />
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Attributes</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>LastWriteTime</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Length</Label>
+            <Alignment>Right</Alignment>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Name</Label>
+            <Alignment>Left</Alignment>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <Wrap />
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>Attributes</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>LastWriteTime</PropertyName>
+                <FormatString>g</FormatString>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Length</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>Name</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>

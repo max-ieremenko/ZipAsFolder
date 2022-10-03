@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Test.csproj.props" />
+
+  <PropertyGroup>
+    <RootNamespace>ZipAsFolder.Archive.Zip</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZipAsFolder.Archive.Zip\ZipAsFolder.Archive.Zip.csproj" />
+    <ProjectReference Include="..\ZipAsFolder.TestApi\ZipAsFolder.TestApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\tests\test-data\Content.zip" />
+  </ItemGroup>
+
+</Project>

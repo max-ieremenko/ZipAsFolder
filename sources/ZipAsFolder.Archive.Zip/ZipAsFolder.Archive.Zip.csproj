@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\ZipAsFolder.Archive.Abstractions\ZipAsFolder.Archive.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.github/ISSUE_TEMPLATE/**'
+  pull_request:
+    branches:
+      - main
+      - 'release/**'
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.github/ISSUE_TEMPLATE/**'
+
+jobs:
+  build:
+    name: win-build
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      shell: pwsh
+      run: .\build\install-dependencies.ps1
+
+    - name: Dotnet info
+      shell: pwsh
+      run: dotnet --info
+
+    - name: Build
+      shell: pwsh
+      run: .\build\build.ps1 CIBuild
+
+    - name: Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: packages
+        path: |
+          .\bin\*.zip
+        if-no-files-found: error
+
+  sdk-test-linux:
+    name: linux-sdk-test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      shell: pwsh
+      run: ./build/install-dependencies.ps1
+
+    - name: Dotnet info
+      shell: pwsh
+      run: dotnet --info
+
+    - name: Build
+      shell: pwsh
+      run: ./build/build.ps1 CIBuild

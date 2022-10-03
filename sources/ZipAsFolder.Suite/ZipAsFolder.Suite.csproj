@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\ZipAsFolder.IO.Abstractions\ZipAsFolder.IO.Abstractions.csproj" />
+    <ProjectReference Include="..\ZipAsFolder.Shared\ZipAsFolder.Shared.csproj" />
+  </ItemGroup>
+</Project>
