@@ -6,6 +6,7 @@ ZipAsFolder is a PowerShell FileSystem provider lets you get, add, change, clear
 
 ```powershell
 PS> Install-Module -Name ZipAsFolder
+PS> Import-Module ZipAsFolder
 ```
 
 After installation new `zf` PSDrive is available. On Windows the Root is empty, on Linux the Root is `/`.
