@@ -11,8 +11,10 @@ param (
     $ModulePath
 )
 
-$tempDir = Join-Path ([System.IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString())
-Expand-Archive $ModulePath $tempDir
-
-$script = Join-Path $TestsPath "scripts/Run-TestsLocally.ps1"
-& $script -ModulePath $tempDir
+task Default {
+    $tempDir = Join-Path ([System.IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString())
+    Expand-Archive $ModulePath $tempDir
+    
+    $script = Join-Path $TestsPath 'scripts/Run-TestsLocally.ps1'
+    Exec { & $script -ModulePath $tempDir }
+}

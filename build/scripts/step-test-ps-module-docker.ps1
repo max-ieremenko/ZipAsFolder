@@ -20,7 +20,7 @@ task Test {
     $pester = Get-Module Pester
     $pesterPath = Split-Path $pester.Path -Parent
 
-    $entryPoint = Join-Path $PSScriptRoot "step-test-ps-module-docker-entrypoint.ps1"
+    $entryPoint = Join-Path $PSScriptRoot 'step-test-ps-module-docker-entrypoint.ps1'
     Exec {
         docker run `
             -it --rm `
@@ -30,6 +30,6 @@ task Test {
             -v "${entryPoint}:/entrypoint.ps1" `
             --entrypoint pwsh `
             $ImageName `
-            "/entrypoint.ps1"
+            '/entrypoint.ps1'
     }
 }

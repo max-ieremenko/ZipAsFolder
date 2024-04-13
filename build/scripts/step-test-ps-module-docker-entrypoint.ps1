@@ -1,4 +1,4 @@
-$ProgressPreference = "SilentlyContinue"
+$ProgressPreference = 'SilentlyContinue'
 
 Expand-Archive /module.zip /root/.local/share/powershell/Modules/ZipAsFolder
 
