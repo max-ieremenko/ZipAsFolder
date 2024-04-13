@@ -1,4 +1,3 @@
-using System;
 using ZipAsFolder.IO;
 using ZipAsFolder.Suite;
 

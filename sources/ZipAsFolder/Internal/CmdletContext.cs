@@ -1,5 +1,4 @@
 using System.Management.Automation.Provider;
-using System.Threading;
 using ZipAsFolder.IO;
 using ZipAsFolder.Suite;
 

@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using ZipAsFolder.Archive;
 using ZipAsFolder.IO.Archive.Internal;
 

@@ -1,5 +1,4 @@
-﻿using System;
-using ZipAsFolder.Archive;
+﻿using ZipAsFolder.Archive;
 
 namespace ZipAsFolder.IO.Archive;
 

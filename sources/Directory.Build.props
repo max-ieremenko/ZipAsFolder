@@ -8,6 +8,7 @@
     <LangVersion>latest</LangVersion>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\ZipAsFolder.snk</AssemblyOriginatorKeyFile>
     <OutputPath>..\..\bin\module</OutputPath>
@@ -32,4 +33,11 @@
     <PackageReference Include="Microsoft.SourceLink.GitHub"  PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Using Include="System.Collections" />
+    <Using Include="System.Diagnostics" />
+    <Using Include="System.Diagnostics.CodeAnalysis" />
+    <Using Include="System.IO.Compression" />
+    <Using Include="System.Text" />
+  </ItemGroup>
 </Project>

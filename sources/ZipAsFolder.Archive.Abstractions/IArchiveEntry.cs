@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ZipAsFolder.Archive;
+﻿namespace ZipAsFolder.Archive;
 
 public interface IArchiveEntry
 {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace ZipAsFolder.TestApi;
+﻿namespace ZipAsFolder.TestApi;
 
 public sealed class TempDirectory : IDisposable
 {

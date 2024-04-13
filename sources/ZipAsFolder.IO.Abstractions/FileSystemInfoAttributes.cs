@@ -1,5 +1,3 @@
-using System;
-
 namespace ZipAsFolder.IO;
 
 [Flags]

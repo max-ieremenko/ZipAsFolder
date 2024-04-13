@@ -1,8 +1,3 @@
-using System;
-using System.IO;
-using Moq;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.TestApi;
 
 namespace ZipAsFolder.IO.FileSystem;

@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO.Compression;
-using System.Text;
-
-namespace ZipAsFolder.Archive.Zip;
+﻿namespace ZipAsFolder.Archive.Zip;
 
 internal sealed class ZipEntry : IArchiveEntry
 {

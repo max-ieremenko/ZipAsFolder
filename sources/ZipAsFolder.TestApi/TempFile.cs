@@ -1,8 +1,3 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
-using Shouldly;
-
 namespace ZipAsFolder.TestApi;
 
 public sealed class TempFile : IDisposable

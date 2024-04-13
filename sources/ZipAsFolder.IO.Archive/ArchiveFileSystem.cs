@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using ZipAsFolder.Archive;
 
 namespace ZipAsFolder.IO.Archive;

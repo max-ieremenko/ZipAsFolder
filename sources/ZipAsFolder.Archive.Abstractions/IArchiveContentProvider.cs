@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace ZipAsFolder.Archive;
+﻿namespace ZipAsFolder.Archive;
 
 public interface IArchiveContentProvider
 {

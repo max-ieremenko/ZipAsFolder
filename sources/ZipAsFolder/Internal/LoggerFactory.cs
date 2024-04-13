@@ -1,9 +1,6 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Management.Automation;
 using System.Management.Automation.Provider;
-using System.Text;
-using System.Threading;
 
 namespace ZipAsFolder.Internal;
 

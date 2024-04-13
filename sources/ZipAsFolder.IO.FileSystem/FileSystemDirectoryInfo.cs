@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace ZipAsFolder.IO.FileSystem;
+﻿namespace ZipAsFolder.IO.FileSystem;
 
 internal sealed class FileSystemDirectoryInfo : DirectoryInfoBase
 {
