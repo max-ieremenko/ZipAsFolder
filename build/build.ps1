@@ -5,14 +5,14 @@
 [CmdletBinding()]
 param (
     [Parameter()]
-    [ValidateSet("LocalBuild", "CIBuild")] 
+    [ValidateSet('LocalBuild', 'CIBuild')] 
     [string]
-    $Task = "LocalBuild"
+    $Task = 'LocalBuild'
 )
 
 Set-StrictMode -Version Latest
-$ErrorActionPreference = "Stop"
-$ProgressPreference = "SilentlyContinue"
+$ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
 
-$file = Join-Path $PSScriptRoot "scripts/build-tasks.ps1"
+$file = Join-Path $PSScriptRoot 'scripts/build-tasks.ps1'
 Invoke-Build -File $file -Task $Task
