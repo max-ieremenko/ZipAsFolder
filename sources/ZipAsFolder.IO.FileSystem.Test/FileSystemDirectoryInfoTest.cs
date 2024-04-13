@@ -66,8 +66,8 @@ public class FileSystemDirectoryInfoTest
 
         actual.Name.ShouldBe(newName);
 
-        DirectoryAssert.Exists(actual.NativeFullName);
-        DirectoryAssert.DoesNotExist(_sut.NativeFullName);
+        Assert.That(actual.NativeFullName, Does.Exist.IgnoreFiles);
+        Assert.That(_sut.NativeFullName, Does.Not.Exist);
 
         _temp = new TempDirectory(actual.NativeFullName);
     }
@@ -79,6 +79,6 @@ public class FileSystemDirectoryInfoTest
 
         Assert.Throws<IOException>(() => _sut.Rename(Path.GetFileName(existing.Location), _context.Object));
 
-        DirectoryAssert.Exists(_sut.NativeFullName);
+        Assert.That(_sut.NativeFullName, Does.Exist.IgnoreFiles);
     }
 }
