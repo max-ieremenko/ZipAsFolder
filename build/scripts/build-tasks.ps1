@@ -1,7 +1,7 @@
 task LocalBuild DefaultBuild, LocalPsCoreTest
 task CIBuild DefaultBuild, CIPsCoreTest
 
-task DefaultBuild Initialize, Clean, Build, PackPowerShellModule, UnitTest60
+task DefaultBuild Initialize, Clean, Build, PackPowerShellModule, UnitTest
 
 Enter-Build {
     $settings = @{
@@ -49,8 +49,8 @@ task Build {
     }
 }
 
-task UnitTest60 {
-    Exec { .\step-unit-test.ps1 $settings.bin "net6.0" }
+task UnitTest {
+    Exec { .\step-unit-test.ps1 $settings.bin "net8.0" }
 }
 
 task PackPowerShellModule {
