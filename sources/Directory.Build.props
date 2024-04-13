@@ -20,7 +20,7 @@
     <FileVersion>$(Version).0</FileVersion>
     <Product>ZipAsFolder</Product>
     <Authors>Max Ieremenko</Authors>
-    <Copyright>(C) 2022 Max Ieremenko.</Copyright>
+    <Copyright>(C) 2022-2024 Max Ieremenko.</Copyright>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
 
     <IncludeSymbols>true</IncludeSymbols>
