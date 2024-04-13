@@ -8,7 +8,7 @@ param (
 $versions = dotnet --list-sdks
 foreach ($installedVersion in $versions) {
     # 6.0.401 [C:\Program Files\dotnet\sdk]
-    $test = ($installedVersion -split " ")[0]
+    $test = ($installedVersion -split ' ')[0]
 
     if ($test -eq $Version) {
         Write-Output ".net sdk $version is alredy installed"
@@ -16,12 +16,12 @@ foreach ($installedVersion in $versions) {
     }
 }
 
-$installDir = "C:\Program Files\dotnet"
-$installScript = "dotnet-install.ps1"
+$installDir = 'C:\Program Files\dotnet'
+$installScript = 'dotnet-install.ps1'
 
 if ($IsLinux) {
-    $installDir = "/usr/share/dotnet"
-    $installScript = "dotnet-install.sh"
+    $installDir = '/usr/share/dotnet'
+    $installScript = 'dotnet-install.sh'
 }
 
 $downloadDir = [System.IO.Path]::GetTempPath()

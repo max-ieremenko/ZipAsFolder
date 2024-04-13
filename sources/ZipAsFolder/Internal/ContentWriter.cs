@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.IO;
 using System.Management.Automation.Provider;
-using System.Threading;
 using ZipAsFolder.Suite;
 
 namespace ZipAsFolder.Internal;

@@ -1,6 +1,3 @@
-using System.IO;
-using System.IO.Compression;
-
 namespace ZipAsFolder.Archive.Zip;
 
 public sealed class ZipContentProvider : IArchiveContentProvider

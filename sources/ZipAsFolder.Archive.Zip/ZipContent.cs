@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.IO.Compression;
-using System.Linq;
-
 namespace ZipAsFolder.Archive.Zip;
 
 internal sealed class ZipContent : IArchiveContent

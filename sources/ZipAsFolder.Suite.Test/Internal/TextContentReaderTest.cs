@@ -1,9 +1,3 @@
-﻿using System.IO;
-using System.Text;
-using System.Threading;
-using Moq;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.IO;
 using ZipAsFolder.TestApi;
 

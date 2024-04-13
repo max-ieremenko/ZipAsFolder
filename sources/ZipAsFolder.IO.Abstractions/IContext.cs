@@ -1,6 +1,4 @@
-﻿using System.Threading;
-
-namespace ZipAsFolder.IO;
+﻿namespace ZipAsFolder.IO;
 
 public interface IContext
 {

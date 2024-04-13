@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using ZipAsFolder.IO;
 using ZipAsFolder.Suite.Internal;
 

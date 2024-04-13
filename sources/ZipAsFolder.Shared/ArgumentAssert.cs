@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-
-namespace ZipAsFolder;
+﻿namespace ZipAsFolder;
 
 public static class ArgumentAssert
 {

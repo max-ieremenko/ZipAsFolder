@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ZipAsFolder;
+﻿namespace ZipAsFolder;
 
 public static class StringExtensions
 {

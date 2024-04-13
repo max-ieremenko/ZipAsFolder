@@ -1,7 +1,3 @@
-using System;
-using System.Diagnostics;
-using System.IO;
-
 namespace ZipAsFolder.IO;
 
 [DebuggerDisplay("{FullName}")]

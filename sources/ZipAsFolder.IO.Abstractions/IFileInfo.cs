@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace ZipAsFolder.IO;
+﻿namespace ZipAsFolder.IO;
 
 public interface IFileInfo : IFileSystemInfo
 {

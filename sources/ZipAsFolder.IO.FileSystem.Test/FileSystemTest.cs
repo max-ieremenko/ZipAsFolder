@@ -1,7 +1,3 @@
-using System;
-using System.IO;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.TestApi;
 
 namespace ZipAsFolder.IO.FileSystem;

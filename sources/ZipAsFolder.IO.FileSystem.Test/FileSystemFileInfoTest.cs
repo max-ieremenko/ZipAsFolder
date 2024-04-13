@@ -1,8 +1,3 @@
-using System;
-using System.IO;
-using Moq;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.TestApi;
 
 namespace ZipAsFolder.IO.FileSystem;
@@ -48,8 +43,8 @@ public class FileSystemFileInfoTest
         actual.Name.ShouldBe("new.txt");
         actual.NativeFullName.ShouldBe(Path.Combine(_directory.Location, "new.txt"));
 
-        FileAssert.Exists(actual.NativeFullName);
-        FileAssert.DoesNotExist(_sut.NativeFullName);
+        Assert.That(actual.NativeFullName, Does.Exist.IgnoreDirectories);
+        Assert.That(_sut.NativeFullName, Does.Not.Exist);
     }
 
     [Test]
@@ -59,6 +54,6 @@ public class FileSystemFileInfoTest
 
         Assert.Throws<IOException>(() => _sut.Rename("new.txt", _context.Object));
 
-        FileAssert.Exists(_sut.NativeFullName);
+        Assert.That(_sut.NativeFullName, Does.Exist.IgnoreDirectories);
     }
 }

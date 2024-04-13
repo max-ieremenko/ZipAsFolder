@@ -1,6 +1,3 @@
-using Moq;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.IO;
 
 namespace ZipAsFolder.Suite.Internal;

@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace ZipAsFolder.IO;
+﻿namespace ZipAsFolder.IO;
 
 public interface IFileSystem
 {

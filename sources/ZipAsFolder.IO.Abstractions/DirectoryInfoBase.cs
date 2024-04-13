@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-
-namespace ZipAsFolder.IO;
+﻿namespace ZipAsFolder.IO;
 
 [DebuggerDisplay("{FullName}")]
 public abstract class DirectoryInfoBase : IDirectoryInfo

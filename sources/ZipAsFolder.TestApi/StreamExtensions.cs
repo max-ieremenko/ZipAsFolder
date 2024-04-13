@@ -1,7 +1,4 @@
-﻿using System.IO;
-using System.Text;
-
-namespace ZipAsFolder.TestApi;
+﻿namespace ZipAsFolder.TestApi;
 
 public static class StreamExtensions
 {

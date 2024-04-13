@@ -1,5 +1,4 @@
 ﻿using System.Management.Automation;
-using System.Text;
 
 namespace ZipAsFolder.Internal;
 
