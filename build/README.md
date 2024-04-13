@@ -4,9 +4,9 @@
 
 - install dependencies
 
-[net8.0 sdk](https://dotnet.microsoft.com/download/dotnet/8.0), 
-[InvokeBuild](https://www.powershellgallery.com/packages/InvokeBuild/5.9.12), 
-[Pester](https://www.powershellgallery.com/packages/Pester/5.3.3)
+[net8.0 sdk](https://dotnet.microsoft.com/download/dotnet/8.0),
+[InvokeBuild](https://www.powershellgallery.com/packages/InvokeBuild/5.10.5),
+[Pester](https://www.powershellgallery.com/packages/Pester/5.5.0)
 
 ``` powershell
 PS> ./build/install-dependencies.ps1
