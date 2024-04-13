@@ -88,9 +88,3 @@ To add `.docx` into the list, just change the configuration
 ```powershell
 PS> $ZipAsFolder.ZipExtensions += ".docx"
 ```
-
-## Motivation
-
-I wrote and maintain the module just for fun and for my own needs. If it's useful for you too, that's great.
-
-The module version `0.*` means the beta/stabilization phase. If you find a bug or misbehavior, please do me a favor by reporting it.
