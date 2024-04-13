@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.IO;
-
-namespace ZipAsFolder.IO.FileSystem;
+﻿namespace ZipAsFolder.IO.FileSystem;
 
 public sealed class FileSystem : IFileSystem
 {

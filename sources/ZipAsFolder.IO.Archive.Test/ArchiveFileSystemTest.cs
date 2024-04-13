@@ -1,7 +1,3 @@
-﻿using System;
-using Moq;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.Archive;
 
 namespace ZipAsFolder.IO.Archive;

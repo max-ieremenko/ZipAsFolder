@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace ZipAsFolder.IO.FileSystem;
+﻿namespace ZipAsFolder.IO.FileSystem;
 
 internal sealed class FileSystemFileInfo : FileInfoBase
 {

@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using ZipAsFolder.IO;
 
 namespace ZipAsFolder.Suite.Internal;

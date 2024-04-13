@@ -1,9 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Moq;
-using NUnit.Framework;
-using Shouldly;
 using ZipAsFolder.Archive;
 
 namespace ZipAsFolder.IO.Archive.Internal;

@@ -1,6 +1,5 @@
 using System.Management.Automation;
 using ZipAsFolder.Internal;
-using ZipAsFolder.IO;
 
 namespace ZipAsFolder;
 

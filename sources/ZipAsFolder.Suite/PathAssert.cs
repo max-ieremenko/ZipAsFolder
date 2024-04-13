@@ -1,7 +1,3 @@
-using System;
-using System.Diagnostics.CodeAnalysis;
-using System.IO;
-
 namespace ZipAsFolder.Suite;
 
 public static class PathAssert
